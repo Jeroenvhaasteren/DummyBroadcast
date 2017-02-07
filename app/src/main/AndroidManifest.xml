@@ -15,6 +15,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".SystemBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".CustomBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="org.bts.atry.dummybroadcast.CUSTOM_MESSAGE" />
+                <action android:name="org.bts.atry.dummybroadcast.CUSTOM_MESSAGE2" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
