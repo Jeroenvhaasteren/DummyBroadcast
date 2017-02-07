@@ -34,6 +34,10 @@
                 <action android:name="org.bts.atry.dummybroadcast.CUSTOM_MESSAGE2" />
             </intent-filter>
         </receiver>
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="false"></receiver>
     </application>
 
 </manifest>
